@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "372678273135",
+    "firebase_url": "https://favorable-kiln-259504.firebaseio.com",
+    "project_id": "favorable-kiln-259504",
+    "storage_bucket": "favorable-kiln-259504.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372678273135:android:00ca10f2d85aff3685059a",
+        "android_client_info": {
+          "package_name": "com.thirtycom.loview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372678273135-ekmkd0kdqqo0ekeuve5kbm1h6h083urc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thirtycom.loview",
+            "certificate_hash": "f1ea967523d32bd61dc75d9eb858a623557bb04b"
+          }
+        },
+        {
+          "client_id": "372678273135-uocsh62edkjet3u4bf6cdfbb86801n23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thirtycom.loview",
+            "certificate_hash": "fe6ac78ad1e82f3ed34a5d22e6378d161741717e"
+          }
+        },
+        {
+          "client_id": "372678273135-cg7e0k9nlhlk19cb716u4gimoss96nit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8oA1cvQA2Hkt4YfInrA_SsGMCQ_qNGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372678273135-cg7e0k9nlhlk19cb716u4gimoss96nit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372678273135:android:39866100dd27446085059a",
+        "android_client_info": {
+          "package_name": "com.thirtycom.walkingman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372678273135-ut3rkc6s4665jjh537sao9emsuupu9g1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thirtycom.walkingman",
+            "certificate_hash": "fe6ac78ad1e82f3ed34a5d22e6378d161741717e"
+          }
+        },
+        {
+          "client_id": "372678273135-cg7e0k9nlhlk19cb716u4gimoss96nit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8oA1cvQA2Hkt4YfInrA_SsGMCQ_qNGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372678273135-cg7e0k9nlhlk19cb716u4gimoss96nit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
