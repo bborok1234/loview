@@ -25,9 +25,7 @@ class _HomeViewState extends State<HomeView> {
     myBanner = new BannerAd(
       adUnitId: bannerId,
       size: AdSize.banner,
-      targetingInfo: new MobileAdTargetingInfo(
-        testDevices: [testId],
-      ),
+      targetingInfo: new MobileAdTargetingInfo(),
       listener: (MobileAdEvent event) {},
     );
     myBanner..load()..show(
