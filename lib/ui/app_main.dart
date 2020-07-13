@@ -86,7 +86,7 @@ class _LoviewAppMainState extends State<LoviewAppMain> {
         ),
       ),
       image: new Image.asset('assets/images/loview.png'),
-      imageBackground: new AssetImage('assets/images/splash.png'),
+      imageBackground: new AssetImage('assets/images/splash.jpg'),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: const TextStyle(
         fontSize: 32,

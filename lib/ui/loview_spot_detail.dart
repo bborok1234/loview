@@ -50,7 +50,6 @@ class _LoviewDetailState extends State<LoviewDetail> {
         disableDragSeek: false,
         loop: false,
         isLive: false,
-        forceHideAnnotation: true,
       ),
     )..addListener(listener);
     _idController = TextEditingController();
@@ -103,19 +102,6 @@ class _LoviewDetailState extends State<LoviewDetail> {
         ),
         backgroundColor: Colors.white,
       ),
-//      appBar: PreferredSize(
-//        preferredSize: Size.fromHeight(80),
-//        child: AppBar(
-//          backgroundColor: Color.fromARGB(255, 255, 255, 255),
-//          flexibleSpace: Container(
-//            margin: EdgeInsets.only(left: 8, top: 32, right: 8, bottom: 8),
-//            child: Image.asset(
-//              "assets/images/loview_logo.png",
-//              fit: BoxFit.fitHeight,
-//            ),
-//          ),
-//        ),
-//      ),
       body: Container(
         constraints: BoxConstraints.expand(height: size.height - 56 - 56 - 74),
         child: SingleChildScrollView(

@@ -191,7 +191,7 @@ class ApiSpotsModel extends ChangeNotifier {
       for (var spot in list) {
         responseSpots.add(Spot.fromFirestore(spot, spotType.loview));
       }
-    } on Exception catch (error) {
+    } on Exception {
       setapiStateError(true);
     }
     _currentLoviewSpots = responseSpots;
@@ -201,7 +201,7 @@ class ApiSpotsModel extends ChangeNotifier {
   }
 
   String _getApiSpotsUrl(
-      {String stateCode = '', String cityCode = '', int numOfRow = 10000}) {
+      {String stateCode = '', String cityCode = '', int numOfRow = 1000}) {
     return '$apiEndpoint/areaBasedList?'
         'ServiceKey=$serviceKey&'
         'pageNo=1&'
@@ -217,7 +217,7 @@ class ApiSpotsModel extends ChangeNotifier {
   }
 
   String _getApiFestivalsUrl(
-      {String stateCode = '', String cityCode = '', int numOfRow = 10000}) {
+      {String stateCode = '', String cityCode = '', int numOfRow = 1000}) {
     return '$apiEndpoint/searchFestival?'
         'ServiceKey=$serviceKey&'
         'pageNo=1&'
@@ -270,7 +270,7 @@ class ApiSpotsModel extends ChangeNotifier {
 
         _representedSpots = rpSpot;
       }
-    } on Exception catch (error) {
+    } on Exception {
       setapiStateError(true);
     }
 
@@ -298,7 +298,7 @@ class ApiSpotsModel extends ChangeNotifier {
       }
       _currentFestivalSpots = responseSpots;
 
-    } on Exception catch (error) {
+    } on Exception {
       setapiStateError(true);
     }
 

@@ -56,19 +56,6 @@ class _FavoriteViewState extends State<FavoriteView> {
         ),
         backgroundColor: Colors.white,
       ),
-//      appBar: PreferredSize(
-//        preferredSize: Size.fromHeight(80),
-//        child: AppBar(
-//          backgroundColor: Color.fromARGB(255, 255, 255, 255),
-//          flexibleSpace: Container(
-//            margin: EdgeInsets.only(left: 8, top: 32, right: 8, bottom: 8),
-//            child: Image.asset(
-//              "assets/images/loview_logo.png",
-//              fit: BoxFit.fitHeight,
-//            ),
-//          ),
-//        ),
-//      ),
       body: Container(
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(

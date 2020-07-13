@@ -40,12 +40,16 @@ subprojects {
         }
     }
 }
-subprojects {
-    afterEvaluate {project ->
-        if (project.hasProperty("android")) {
+
+ext {
+    compileSdkVersion = 29
+}
+
+subprojects { subproject ->
+    afterEvaluate{
+        if((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
             android {
-                compileSdkVersion 28
-                buildToolsVersion '29.0.2'
+                compileSdkVersion rootProject.ext.compileSdkVersion
             }
         }
     }

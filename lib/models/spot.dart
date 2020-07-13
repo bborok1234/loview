@@ -36,18 +36,18 @@ class Spot {
   });
 
   Spot.fromJson(Map<String, dynamic> json, spotType type) {
-    var responsed_images = List<String>();
+    var responsedImages = List<String>();
     if (json['images'] != null) {
-      responsed_images.add(json['images'][0]);
+      responsedImages.add(json['images'][0]);
     }
     if (json['firstimage'] != null) {
-      responsed_images.add(json['firstimage']);
+      responsedImages.add(json['firstimage']);
     }
     if (json['firstimage2'] != null) {
-      responsed_images.add(json['firstimage2']);
+      responsedImages.add(json['firstimage2']);
     }
-    if (responsed_images.length == 0) {
-      responsed_images.add('https://firebasestorage.googleapis.com/v0/b/favorable-kiln-259504.appspot.com/o/loview_contents%2Floview_recom.jpg?alt=media&token=3fc15d70-41b9-466e-ade5-3aace49dd459');
+    if (responsedImages.length == 0) {
+      responsedImages.add('https://firebasestorage.googleapis.com/v0/b/favorable-kiln-259504.appspot.com/o/loview_contents%2Floview_recom.jpg?alt=media&token=3fc15d70-41b9-466e-ade5-3aace49dd459');
     }
 
     var savedType;
@@ -72,7 +72,7 @@ class Spot {
     title = json['title'] ?? '';
     desc = '';
     addr = json['addr1'] ?? json['addr'] ?? '';
-    images = responsed_images;
+    images = responsedImages;
     video = '';
     startDate = json['eventstartdate'] != null ? DateTime.parse(json['eventstartdate'].toString()) : null;
     endDate = json['eventenddate'] != null ? DateTime.parse(json['eventenddate'].toString()) : null;
@@ -81,9 +81,9 @@ class Spot {
   }
 
   Spot.fromFirestore(Map<String, dynamic> map, spotType type) {
-    var responsed_images = List<String>();
+    var responsedImages = List<String>();
     for (var image in map['images']) {
-      responsed_images.add(image);
+      responsedImages.add(image);
     }
     stateCode = map['stateCode'] ?? stateCodes['전체'];
     cityCode = map['cityCode'] == stateCodes['전체'] ?
@@ -93,7 +93,7 @@ class Spot {
     title = map['title'] ?? '';
     desc = map['desc'] ?? '';
     addr = map['addr'] ?? '';
-    images = responsed_images ?? [];
+    images = responsedImages ?? [];
     video = map['video'];
     blog = map['blog'];
     tell = null.toString();

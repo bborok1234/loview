@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:loview/constants/constants.dart';
-
 import 'package:loview/providers/api_spots_model.dart';
 
 import 'package:loview/models/spot.dart';

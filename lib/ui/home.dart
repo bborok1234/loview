@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_admob/firebase_admob.dart';
-import 'package:device_info/device_info.dart';
 
 import 'package:loview/constants/constants.dart';
 import 'package:loview/providers/api_spots_model.dart';
@@ -63,19 +62,6 @@ class _HomeViewState extends State<HomeView> {
           backgroundColor: Colors.white,
         ),
       ),
-//      appBar: PreferredSize(
-//        preferredSize: Size.fromHeight(80),
-//        child: AppBar(
-//          backgroundColor: Color.fromARGB(255, 255, 255, 255),
-//          flexibleSpace: Container(
-//            margin: EdgeInsets.only(left: 8, top: 32, right: 8, bottom: 8),
-//            child: Image.asset(
-//              "assets/images/loview_logo.png",
-//              fit: BoxFit.fitHeight,
-//            ),
-//          ),
-//        ),
-//      ),
       body: Container(
         constraints: BoxConstraints.expand(height: size.height - 56 - 56 - 56 - 18),
         decoration: BoxDecoration(
